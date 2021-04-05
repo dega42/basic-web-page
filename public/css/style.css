@@ -1,0 +1,244 @@
+/* HEADER & NAVIGATION */
+
+.header .container {
+  padding-right: 25px;
+}
+
+.header {
+  background-color: var(--primary-color);
+  /* border-bottom: 1px solid #E2E8F0; */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  transition: height, 0.3s;
+}
+
+.hamburger {
+  display: none;
+  margin-bottom: 4px;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--main-color);
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.nav-item {
+  margin-left: 2.5rem;
+}
+
+.nav-link {
+  font-family: Oswald;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 400;
+  transition: color, 0.3s;
+  padding: 10px 15px;
+  /* background-color: #fff; */
+}
+
+.nav-link:hover {
+  color: var(--main-background-color);
+}
+
+.nav-logo {
+  font-family: Montserrat;
+  font-size: 1.6rem;
+  transition: color, 0.3s;
+  margin-bottom: 4px;
+}
+
+.nav-logo:hover {
+  color: var(--main-background-color);
+}
+
+/* CONTENT */
+
+/* ABOUT_US */
+
+#about_us {
+  margin-top: 70px;
+}
+
+/* WORKS */
+
+#works {
+  background-color: var(--primary-color);
+  padding: 30px;
+}
+
+#works img {
+  width: 250px;
+}
+
+/* BLOG */
+
+/* CONTACT */
+
+#contact {
+  background-color: var(--primary-color);
+  margin: 80px 0;
+}
+
+#contact .container {
+  margin-bottom: 50px;
+}
+
+#contact .flex {
+  justify-content: space-between;
+}
+
+/* KAPCSOLAT_FORM */
+
+.contact_links {
+  align-self: center;
+}
+
+.contact_forms {
+  width: 300px;
+}
+
+.contact_forms textarea {
+  height: 100px;
+}
+
+.form-control {
+  margin-bottom: 5px;
+}
+
+/* CONTACT LINKS */
+
+
+
+/* FOOTER */
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f2f2f2;
+  font-size: 0.8em;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0px 9px 8px -10px #CCC;
+}
+
+/* MEDIA QUERIES */
+
+/* Small Mobile devices */
+
+@media screen and (max-width:480px) {
+  /* HEADER & NAVIGATION */
+  .navbar {
+      height: 50px;
+  }
+  .nav-menu {
+      position: fixed;
+      left: -100%;
+      top: 50px;
+      flex-direction: column;
+      background-color: var(--primary-color);
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+  .nav-menu.active {
+      left: 0;
+  }
+  .nav-item {
+      margin: 1.5rem 0;
+  }
+  .hamburger {
+      display: block;
+      cursor: pointer;
+  }
+  .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+      -webkit-transform: translateY(8px) rotate(45deg);
+      transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+      -webkit-transform: translateY(-8px) rotate(-45deg);
+      transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+/* iPads, Tablets */
+
+@media screen and (min-width:481px) and (max-width:768px) {
+  /* HEADER & NAVIGATION */
+  .navbar {
+      height: 50px;
+  }
+  .nav-menu {
+      position: fixed;
+      left: -100%;
+      top: 50px;
+      flex-direction: column;
+      background-color: var(--primary-color);
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+  .nav-menu.active {
+      left: 0;
+  }
+  .nav-item {
+      margin: 1.5rem 0;
+  }
+  .hamburger {
+      display: block;
+      cursor: pointer;
+  }
+  .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+      -webkit-transform: translateY(8px) rotate(45deg);
+      transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+      -webkit-transform: translateY(-8px) rotate(-45deg);
+      transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+/* Small screens, laptops */
+
+@media screen and (min-width:769px) and (max-width:1024px) {}
+
+/* Large screens, desktops */
+
+@media screen and (min-width:1025px) and (max-width:1200px) {}
+
+/* Extra large screens, TV */
+
+@media screen and (min-width:1200px) {}

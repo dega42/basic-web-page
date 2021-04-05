@@ -1,0 +1,162 @@
+/* DEFAULT SETUP & NORMALIZE */
+
+:root {
+    --main-color: #333;
+    --main-background-color: #fafafa;
+    --primary-color: yellowgreen;
+    --main-font: 'Roboto', sans-serif;
+}
+
+html {
+    line-height: 1.15;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: var(--main-font);
+    font-size: 18px;
+    background-color: var(--main-background-color);
+    color: var(--main-color);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    margin: 10px 0;
+    padding: 10px 0;
+    line-height: 1.4em;
+}
+
+h1 {
+    margin: 10px 0;
+    padding: 10px 0;
+}
+
+/* UTILITES */
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: -20px;
+}
+
+/* BUTTONS */
+
+.btn {
+    font-family: var(--main-font);
+    text-transform: uppercase;
+    font-size: 1em;
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+/* TEXTS */
+
+.text-center {
+    text-align: center;
+}
+
+/* FORMS */
+
+input[type="text"], input[type="email"], input[type="password"], input[type="url"], input[type="number"], input[type="search"], input[type="tel"], input[type="color"], input[type="date"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="time"], input[type="file"], input[type="image"], input[type="range"], select, textarea {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    width: 100%;
+    font-family: var(--main-font);
+    margin: 0;
+}
+
+select:focus, textarea:focus, input:focus {
+    outline: none;
+    border: 1px solid #444;
+}
+
+input[type="button"], input[type="submit"], input[type="reset"], button {
+    background-color: var(--primary-color);
+    border: 0px solid darkgreen;
+    padding: 12px 20px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover, button:hover {
+    color: #fff;
+}
+
+textarea {
+    resize: none;
+}
+
+label {
+    display: inline-block;
+    font-style: italic;
+    font-size: 0.8em;
+    margin-bottom: 5px;
+}
+fieldset {
+    border: 1px solid #ccc;
+    padding: 10px 20px 20px 20px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.2); 
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.2);
+}
+
+legend {
+    /* background-color: #000; */
+    margin-left: 20px;
+    
+    padding: 3px 6px;
+}
