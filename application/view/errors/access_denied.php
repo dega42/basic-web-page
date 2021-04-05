@@ -1,1 +1,3 @@
-Hozzáférés megtagadva
+<div class="container">
+    Hozzáférés megtagadva
+</div>
